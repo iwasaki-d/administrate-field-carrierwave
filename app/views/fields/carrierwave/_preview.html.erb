@@ -1,1 +1,1 @@
-<%= link_to image_tag(file.url(field.image), alt: file.filename), file.url, target: '_blank' %>
+<%= link_to cl_image_tag(file.model.image_url(:standard, crop: 'pad', format:'png'), alt:'test'), file.url, target: '_blank' %>
